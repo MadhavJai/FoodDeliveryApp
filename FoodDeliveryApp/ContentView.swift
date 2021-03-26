@@ -9,8 +9,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var username: String = ""
+    @State private var password: String = ""
+    
     var body: some View {
-        Text("food delivery app")
+//        Text("food delivery app")
+        ZStack {
+            Color.blue.opacity(0.2)
+            VStack{
+                TextField("Username", text: $username).textFieldStyle(RoundedBorderTextFieldStyle())
+                TextField("Password", text: $password).textFieldStyle(RoundedBorderTextFieldStyle())
+            }
+        }
     }
 }
 
