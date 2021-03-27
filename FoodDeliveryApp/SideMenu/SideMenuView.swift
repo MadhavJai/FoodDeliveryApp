@@ -37,7 +37,7 @@ struct SideMenuView: View {
                     case "Browse by Dept.":
                         NavigationLink(
                             
-                            destination: Text("sike"),
+                            destination: ItemDept(),
                             label: {
                                 SideMenuOptionView(viewModel: option)
                             }
