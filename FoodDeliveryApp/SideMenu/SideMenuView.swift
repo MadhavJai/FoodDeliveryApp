@@ -53,7 +53,7 @@ struct SideMenuView: View {
                     case "Your Orders":
                         NavigationLink(
                             
-                            destination: Text(option.title),
+                            destination: OrdersListView(),
                             label: {
                                 SideMenuOptionView(viewModel: option)
                             }
