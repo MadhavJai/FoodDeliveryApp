@@ -10,6 +10,39 @@ import SwiftUI
 
 struct MainScreen: View {
     
+    @State private var isShowing = false
+    
+    var body: some View {
+        
+        ZStack {
+            if isShowing {
+                SideMenuView()
+            }
+            HomeView()
+                .cornerRadius(isShowing ? 20 : 10)
+                .offset(x: isShowing ? -300 : 0, y: isShowing ? 100 : 0)
+                .scaleEffect(isShowing ? 0.8 : 1)
+                .navigationTitle("Home page")
+                .navigationBarTitleDisplayMode(.automatic)
+                .navigationBarHidden(false)
+                .navigationBarItems(trailing: Button(action: {
+                    withAnimation(.spring()) {
+                        isShowing.toggle()
+                    }
+                }, label: {
+                    Image(systemName: "list.bullet")
+                        .foregroundColor(.black)
+                }))
+        }
+    }
+}
+
+
+
+struct HomeView: View {
+    
+    @State var edges =  UIApplication.shared.windows.first?.safeAreaInsets
+    
     var body: some View {
         
         ZStack {
@@ -18,60 +51,7 @@ struct MainScreen: View {
             
             Text("Home page").padding()
         } // end of ZStack
-        .navigationTitle("Home page")
-        .navigationBarTitleDisplayMode(.automatic)
-        .navigationBarHidden(false)
-        .navigationBarItems(trailing: Button(action: {
-            print("sidebar tapped")
-        }, label: {
-            Image(systemName: "list.bullet")
-                .foregroundColor(.black)
-        }))
-    }
-}
-
-
-
-struct Home: View {
-    
-    @State var edges =  UIApplication.shared.windows.first?.safeAreaInsets
-    
-    var body: some View {
         
-        VStack {
-            
-            ZStack {
-                
-                HStack {
-                    
-                    Button(action: {}, label: {
-                        Image(systemName: "line.horizontal.3")
-                            .font(.system(size: 22))
-                            .foregroundColor(.white)
-                    })
-                    
-                    Spacer(minLength: 0)
-                    
-                    Button(action: {}, label: {
-                        
-                        Image(systemName: "person.fill")
-                            .resizable()
-                            .renderingMode(.original)
-                            .frame(width: 35, height: 35)
-                            
-                    })
-                } // end of HStack
-                
-                Text("Home")
-                    .font(.title)
-                    .fontWeight(.semibold)
-            }
-            .padding(.top,edges!.top)
-            .background(Color.white)
-            .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0.0, y: 0.0)
-            
-            Spacer(minLength: /*@START_MENU_TOKEN@*/0/*@END_MENU_TOKEN@*/)
-        }
     }
 }
 
