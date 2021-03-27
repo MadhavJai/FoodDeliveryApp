@@ -22,6 +22,7 @@ struct MainScreen: View {
                 .cornerRadius(isShowing ? 20 : 10)
                 .offset(x: isShowing ? -200 : 0, y: isShowing ? 200 : 0)
                 .scaleEffect(isShowing ? 0.8 : 1)
+                .shadow(color: isShowing ? Color/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/.opacity(0.65) : Color/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/.opacity(0), radius: 10, x: 5, y: 5 )
                 .navigationTitle("Home page")
                 .navigationBarTitleDisplayMode(.automatic)
                 .navigationBarHidden(false)

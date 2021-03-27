@@ -6,16 +6,32 @@
 //  Copyright © 2021 Madhav Jaisankar. All rights reserved.
 //
 
-import SwiftUI
+import Foundation
 
-struct SideMenuViewModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+enum SideMenuViewModel: Int, CaseIterable {
+    case account
+    case browse
+    case cart
+    case orders
+    case wishlist
+    
+    var title: String {
+        switch self  {
+        case .account: return "Your Account"
+        case .browse: return "Browse by Dept."
+        case .cart: return "Go to Cart"
+        case .orders: return "Your Orders"
+        case .wishlist: return "Your Wishlist"
+        }
     }
-}
-
-struct SideMenuViewModel_Previews: PreviewProvider {
-    static var previews: some View {
-        SideMenuViewModel()
+    
+    var imageName: String {
+        switch self  {
+        case .account: return "person"
+        case .browse: return "square.grid.2x2"
+        case .cart: return "cart.fill"
+        case .orders: return "cube.box"
+        case .wishlist: return "bookmark"
+        }
     }
 }

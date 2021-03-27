@@ -22,8 +22,62 @@ struct SideMenuView: View {
                     .frame(height: 240)
                 
                 // Cell items
-                ForEach(0..<5) { _ in
-                    SideMenuOptionView()
+                ForEach(SideMenuViewModel.allCases, id: \.self) { option in
+                    
+                    switch option.title  {
+                    case "Your Account":
+                        NavigationLink(
+                            
+                            destination: Text(option.title),
+                            label: {
+                                SideMenuOptionView(viewModel: option)
+                            }
+                        )
+                        
+                    case "Browse by Dept.":
+                        NavigationLink(
+                            
+                            destination: Text("sike"),
+                            label: {
+                                SideMenuOptionView(viewModel: option)
+                            }
+                        )
+                    case "Go to Cart":
+                        NavigationLink(
+                            
+                            destination: Text(option.title),
+                            label: {
+                                SideMenuOptionView(viewModel: option)
+                            }
+                        )
+                    case "Your Orders":
+                        NavigationLink(
+                            
+                            destination: Text(option.title),
+                            label: {
+                                SideMenuOptionView(viewModel: option)
+                            }
+                        )
+                    
+                    case "Your Wishlist":
+                        NavigationLink(
+                            
+                            destination: Text(option.title),
+                            label: {
+                                SideMenuOptionView(viewModel: option)
+                            }
+                        )
+                    
+                    default:
+                        NavigationLink(
+                            
+                            destination: Text(option.title),
+                            label: {
+                                SideMenuOptionView(viewModel: option)
+                            }
+                        )
+                    }
+                    
                 }
                 Spacer()
             }
