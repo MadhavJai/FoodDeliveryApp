@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct SideMenuView: View {
+    @Binding var isShowing : Bool
     var body: some View {
         ZStack {
             // background color gradient
@@ -16,7 +17,7 @@ struct SideMenuView: View {
             
             VStack {
                 // Header
-                SideMenuHeaderView()
+                SideMenuHeaderView(isShowing: $isShowing)
                     .foregroundColor(.white)
                     .frame(height: 240)
                 
@@ -32,6 +33,6 @@ struct SideMenuView: View {
 
 struct SideMenuView_Previews: PreviewProvider {
     static var previews: some View {
-        SideMenuView()
+        SideMenuView(isShowing: .constant(true))
     }
 }

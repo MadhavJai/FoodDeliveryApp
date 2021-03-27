@@ -16,11 +16,11 @@ struct MainScreen: View {
         
         ZStack {
             if isShowing {
-                SideMenuView()
+                SideMenuView(isShowing: $isShowing)
             }
             HomeView()
                 .cornerRadius(isShowing ? 20 : 10)
-                .offset(x: isShowing ? -300 : 0, y: isShowing ? 100 : 0)
+                .offset(x: isShowing ? -200 : 0, y: isShowing ? 200 : 0)
                 .scaleEffect(isShowing ? 0.8 : 1)
                 .navigationTitle("Home page")
                 .navigationBarTitleDisplayMode(.automatic)

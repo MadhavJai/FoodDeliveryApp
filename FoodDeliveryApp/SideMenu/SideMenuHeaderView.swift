@@ -15,7 +15,11 @@ struct SideMenuHeaderView: View {
         ZStack(alignment: .topLeading) {
             
             // close sidebar button
-            Button(action: { isShowing.toggle() }, label: {
+            Button(action: {
+                withAnimation(.spring()) {
+                    isShowing.toggle()
+                }
+            }, label: {
                 Image(systemName: "xmark")
                     .frame(width: 56, height: 56)
                     .foregroundColor(.white)
@@ -60,6 +64,6 @@ struct SideMenuHeaderView: View {
 
 struct SideMenuHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        SideMenuHeaderView()
+        SideMenuHeaderView(isShowing: .constant(true))
     }
 }
