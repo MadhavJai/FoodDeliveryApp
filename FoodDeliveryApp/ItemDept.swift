@@ -27,7 +27,7 @@ struct ItemDept: View {
             ForEach(depts, id: \.self) { dept in
                 HStack {
                     NavigationLink(
-                        destination: Text(dept),
+                        destination: Text("Now browsing: \(dept)" ),
                         label: {
                             Text(dept)
                         }
