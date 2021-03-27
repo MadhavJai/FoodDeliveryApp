@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		EB5360A6260EF0AA00D2DB4A /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5360A5260EF0AA00D2DB4A /* Styles.swift */; };
 		EB5360B0260EF2AC00D2DB4A /* cart.png in Resources */ = {isa = PBXBuildFile; fileRef = EB5360AF260EF2AC00D2DB4A /* cart.png */; };
+		EB5360B2260F0B3A00D2DB4A /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB5360B1260F0B3A00D2DB4A /* MainScreen.swift */; };
 		EBD5FE85260D3F44008E85C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5FE84260D3F44008E85C7 /* AppDelegate.swift */; };
 		EBD5FE87260D3F44008E85C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5FE86260D3F44008E85C7 /* SceneDelegate.swift */; };
 		EBD5FE89260D3F44008E85C7 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5FE88260D3F44008E85C7 /* LoginScreen.swift */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		EB5360A5260EF0AA00D2DB4A /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
 		EB5360AF260EF2AC00D2DB4A /* cart.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = cart.png; path = ../../../../../Downloads/cart.png; sourceTree = "<group>"; };
+		EB5360B1260F0B3A00D2DB4A /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
 		EBD5FE81260D3F44008E85C7 /* FoodDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD5FE84260D3F44008E85C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD5FE86260D3F44008E85C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				EBD5FE84260D3F44008E85C7 /* AppDelegate.swift */,
 				EBD5FE86260D3F44008E85C7 /* SceneDelegate.swift */,
 				EBD5FE88260D3F44008E85C7 /* LoginScreen.swift */,
+				EB5360B1260F0B3A00D2DB4A /* MainScreen.swift */,
 				EB5360A5260EF0AA00D2DB4A /* Styles.swift */,
 				EBD5FE8A260D3F45008E85C7 /* Assets.xcassets */,
 				EBD5FE8F260D3F45008E85C7 /* LaunchScreen.storyboard */,
@@ -163,6 +166,7 @@
 			files = (
 				EBD5FE85260D3F44008E85C7 /* AppDelegate.swift in Sources */,
 				EBD5FE87260D3F44008E85C7 /* SceneDelegate.swift in Sources */,
+				EB5360B2260F0B3A00D2DB4A /* MainScreen.swift in Sources */,
 				EBD5FE89260D3F44008E85C7 /* LoginScreen.swift in Sources */,
 				EB5360A6260EF0AA00D2DB4A /* Styles.swift in Sources */,
 			);
@@ -232,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -286,7 +290,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
