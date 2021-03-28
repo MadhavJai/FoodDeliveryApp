@@ -45,7 +45,7 @@ struct SideMenuView: View {
                     case "Go to Cart":
                         NavigationLink(
                             
-                            destination: Text(option.title),
+                            destination: CartScreen(),
                             label: {
                                 SideMenuOptionView(viewModel: option)
                             }

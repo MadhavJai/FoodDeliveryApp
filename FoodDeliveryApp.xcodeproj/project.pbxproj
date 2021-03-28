@@ -18,6 +18,9 @@
 		EB83293D260FC7C000596B57 /* LazyStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83293C260FC7C000596B57 /* LazyStack.swift */; };
 		EB832940260FC80B00596B57 /* HViewGrid.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83293F260FC80B00596B57 /* HViewGrid.swift */; };
 		EB832943260FD61800596B57 /* OrdersListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB832942260FD61800596B57 /* OrdersListView.swift */; };
+		EB832948260FFFD900596B57 /* CartScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB832947260FFFD900596B57 /* CartScreen.swift */; };
+		EB83294B260FFFFE00596B57 /* BillAndShipScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83294A260FFFFE00596B57 /* BillAndShipScreen.swift */; };
+		EB83294F2610002600596B57 /* OrderScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB83294E2610002600596B57 /* OrderScreen.swift */; };
 		EBD5FE85260D3F44008E85C7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5FE84260D3F44008E85C7 /* AppDelegate.swift */; };
 		EBD5FE87260D3F44008E85C7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5FE86260D3F44008E85C7 /* SceneDelegate.swift */; };
 		EBD5FE89260D3F44008E85C7 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD5FE88260D3F44008E85C7 /* LoginScreen.swift */; };
@@ -38,6 +41,9 @@
 		EB83293C260FC7C000596B57 /* LazyStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyStack.swift; sourceTree = "<group>"; };
 		EB83293F260FC80B00596B57 /* HViewGrid.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HViewGrid.swift; sourceTree = "<group>"; };
 		EB832942260FD61800596B57 /* OrdersListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersListView.swift; sourceTree = "<group>"; };
+		EB832947260FFFD900596B57 /* CartScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartScreen.swift; sourceTree = "<group>"; };
+		EB83294A260FFFFE00596B57 /* BillAndShipScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillAndShipScreen.swift; sourceTree = "<group>"; };
+		EB83294E2610002600596B57 /* OrderScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderScreen.swift; sourceTree = "<group>"; };
 		EBD5FE81260D3F44008E85C7 /* FoodDeliveryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodDeliveryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD5FE84260D3F44008E85C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EBD5FE86260D3F44008E85C7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -104,6 +110,9 @@
 				EB5360B1260F0B3A00D2DB4A /* MainScreen.swift */,
 				EB832938260FA50200596B57 /* ItemDept.swift */,
 				EB832942260FD61800596B57 /* OrdersListView.swift */,
+				EB832947260FFFD900596B57 /* CartScreen.swift */,
+				EB83294A260FFFFE00596B57 /* BillAndShipScreen.swift */,
+				EB83294E2610002600596B57 /* OrderScreen.swift */,
 				EB832936260F768200596B57 /* SideMenu */,
 				EB5360A5260EF0AA00D2DB4A /* Styles.swift */,
 				EBD5FE8A260D3F45008E85C7 /* Assets.xcassets */,
@@ -204,9 +213,12 @@
 				EBD5FE85260D3F44008E85C7 /* AppDelegate.swift in Sources */,
 				EB832934260F765500596B57 /* SideMenuViewModel.swift in Sources */,
 				EBD5FE87260D3F44008E85C7 /* SceneDelegate.swift in Sources */,
+				EB83294F2610002600596B57 /* OrderScreen.swift in Sources */,
+				EB83294B260FFFFE00596B57 /* BillAndShipScreen.swift in Sources */,
 				EB5360B2260F0B3A00D2DB4A /* MainScreen.swift in Sources */,
 				EB832939260FA50300596B57 /* ItemDept.swift in Sources */,
 				EB83293D260FC7C000596B57 /* LazyStack.swift in Sources */,
+				EB832948260FFFD900596B57 /* CartScreen.swift in Sources */,
 				EBD5FE89260D3F44008E85C7 /* LoginScreen.swift in Sources */,
 				EB5360A6260EF0AA00D2DB4A /* Styles.swift in Sources */,
 			);
