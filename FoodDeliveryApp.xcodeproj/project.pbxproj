@@ -84,6 +84,23 @@
 			path = SideMenu;
 			sourceTree = "<group>";
 		};
+		EBB7E01D2628CB0500F6DFB3 /* PresentationViews */ = {
+			isa = PBXGroup;
+			children = (
+				EB832936260F768200596B57 /* SideMenu */,
+				EBD5FE88260D3F44008E85C7 /* LoginScreen.swift */,
+				EB5360B1260F0B3A00D2DB4A /* MainScreen.swift */,
+				EB832942260FD61800596B57 /* OrdersListView.swift */,
+				EB832947260FFFD900596B57 /* CartScreen.swift */,
+				EB83294E2610002600596B57 /* OrderScreen.swift */,
+				EB83294A260FFFFE00596B57 /* BillAndShipScreen.swift */,
+				EB5360A5260EF0AA00D2DB4A /* Styles.swift */,
+				EB83293F260FC80B00596B57 /* HViewGrid.swift */,
+				EB83293C260FC7C000596B57 /* LazyStack.swift */,
+			);
+			path = PresentationViews;
+			sourceTree = "<group>";
+		};
 		EBD5FE78260D3F44008E85C7 = {
 			isa = PBXGroup;
 			children = (
@@ -103,24 +120,15 @@
 		EBD5FE83260D3F44008E85C7 /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				EBB7E01D2628CB0500F6DFB3 /* PresentationViews */,
 				EB5360A9260EF1D300D2DB4A /* Images */,
 				EBD5FE84260D3F44008E85C7 /* AppDelegate.swift */,
 				EBD5FE86260D3F44008E85C7 /* SceneDelegate.swift */,
-				EBD5FE88260D3F44008E85C7 /* LoginScreen.swift */,
-				EB5360B1260F0B3A00D2DB4A /* MainScreen.swift */,
 				EB832938260FA50200596B57 /* ItemDept.swift */,
-				EB832942260FD61800596B57 /* OrdersListView.swift */,
-				EB832947260FFFD900596B57 /* CartScreen.swift */,
-				EB83294A260FFFFE00596B57 /* BillAndShipScreen.swift */,
-				EB83294E2610002600596B57 /* OrderScreen.swift */,
-				EB832936260F768200596B57 /* SideMenu */,
-				EB5360A5260EF0AA00D2DB4A /* Styles.swift */,
 				EBD5FE8A260D3F45008E85C7 /* Assets.xcassets */,
 				EBD5FE8F260D3F45008E85C7 /* LaunchScreen.storyboard */,
 				EBD5FE92260D3F45008E85C7 /* Info.plist */,
 				EBD5FE8C260D3F45008E85C7 /* Preview Content */,
-				EB83293C260FC7C000596B57 /* LazyStack.swift */,
-				EB83293F260FC80B00596B57 /* HViewGrid.swift */,
 			);
 			path = FoodDeliveryApp;
 			sourceTree = "<group>";
