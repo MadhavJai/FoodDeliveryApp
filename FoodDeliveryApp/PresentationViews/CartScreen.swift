@@ -19,7 +19,7 @@ struct CartScreen: View {
         ScrollView {
             
             HStack {
-                Text("Prodcut(s)")
+                Text("Product(s)")
                 Text("")
                 Text("Name")
                 Text("Price")

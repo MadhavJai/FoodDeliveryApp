@@ -9,8 +9,11 @@
 import SwiftUI
 
 struct HViewGrid: View {
+    let itemController = ItemController()
     var title: String
+    var itemGroup: [Drinks]
     @State var seeMore = false
+
     let rows = [
         GridItem(.flexible()),GridItem(.flexible())
     ]
@@ -18,6 +21,7 @@ struct HViewGrid: View {
     let row = [
         GridItem(.flexible())
     ]
+    
     
     var body: some View {
         VStack {
@@ -36,7 +40,7 @@ struct HViewGrid: View {
             }.padding(.horizontal)
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHGrid(rows: seeMore ? rows : row, alignment: .firstTextBaseline) {
-                        ForEach(cocktails) { m in
+                        ForEach(itemGroup) { m in
                             doubleColumn(m: m).frame(width: 150)
                         }
                     }.padding(.leading).frame(height: seeMore ? 410 : 200)
@@ -46,8 +50,4 @@ struct HViewGrid: View {
     }
 }
 
-struct HView_Previews: PreviewProvider {
-    static var previews: some View {
-        HViewGrid(title: "Your Favourites")
-    }
-}
+
