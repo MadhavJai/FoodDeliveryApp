@@ -73,32 +73,78 @@
 			path = Images;
 			sourceTree = "<group>";
 		};
-		EB832936260F768200596B57 /* SideMenu */ = {
-			isa = PBXGroup;
-			children = (
-				EB83292A260F761A00596B57 /* SideMenuView.swift */,
-				EB83292D260F762E00596B57 /* SideMenuHeaderView.swift */,
-				EB832930260F764400596B57 /* SideMenuOptionView.swift */,
-				EB832933260F765500596B57 /* SideMenuViewModel.swift */,
-			);
-			path = SideMenu;
-			sourceTree = "<group>";
-		};
 		EBB7E01D2628CB0500F6DFB3 /* PresentationViews */ = {
 			isa = PBXGroup;
 			children = (
-				EB832936260F768200596B57 /* SideMenu */,
 				EBD5FE88260D3F44008E85C7 /* LoginScreen.swift */,
 				EB5360B1260F0B3A00D2DB4A /* MainScreen.swift */,
 				EB832942260FD61800596B57 /* OrdersListView.swift */,
 				EB832947260FFFD900596B57 /* CartScreen.swift */,
 				EB83294E2610002600596B57 /* OrderScreen.swift */,
 				EB83294A260FFFFE00596B57 /* BillAndShipScreen.swift */,
-				EB5360A5260EF0AA00D2DB4A /* Styles.swift */,
-				EB83293F260FC80B00596B57 /* HViewGrid.swift */,
-				EB83293C260FC7C000596B57 /* LazyStack.swift */,
 			);
 			path = PresentationViews;
+			sourceTree = "<group>";
+		};
+		EBB7E02026296FC800F6DFB3 /* ServicesLayer */ = {
+			isa = PBXGroup;
+			children = (
+				EBB7E021262971F400F6DFB3 /* Database Manager */,
+			);
+			path = ServicesLayer;
+			sourceTree = "<group>";
+		};
+		EBB7E021262971F400F6DFB3 /* Database Manager */ = {
+			isa = PBXGroup;
+			children = (
+				EBB7E022262972AB00F6DFB3 /* Interfaces */,
+			);
+			path = "Database Manager";
+			sourceTree = "<group>";
+		};
+		EBB7E022262972AB00F6DFB3 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				EBB7E023262972E600F6DFB3 /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		EBB7E023262972E600F6DFB3 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		EBB7E02426297D7700F6DFB3 /* ApplicationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				EBB7E0252629872D00F6DFB3 /* StorefrontSystem */,
+			);
+			path = ApplicationLayer;
+			sourceTree = "<group>";
+		};
+		EBB7E0252629872D00F6DFB3 /* StorefrontSystem */ = {
+			isa = PBXGroup;
+			children = (
+				EB5360A5260EF0AA00D2DB4A /* Styles.swift */,
+				EB83293C260FC7C000596B57 /* LazyStack.swift */,
+				EB83293F260FC80B00596B57 /* HViewGrid.swift */,
+				EBB7E0262629874200F6DFB3 /* SideMenu */,
+			);
+			path = StorefrontSystem;
+			sourceTree = "<group>";
+		};
+		EBB7E0262629874200F6DFB3 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				EB83292D260F762E00596B57 /* SideMenuHeaderView.swift */,
+				EB832930260F764400596B57 /* SideMenuOptionView.swift */,
+				EB832933260F765500596B57 /* SideMenuViewModel.swift */,
+				EB83292A260F761A00596B57 /* SideMenuView.swift */,
+			);
+			path = SideMenu;
 			sourceTree = "<group>";
 		};
 		EBD5FE78260D3F44008E85C7 = {
@@ -120,6 +166,8 @@
 		EBD5FE83260D3F44008E85C7 /* FoodDeliveryApp */ = {
 			isa = PBXGroup;
 			children = (
+				EBB7E02426297D7700F6DFB3 /* ApplicationLayer */,
+				EBB7E02026296FC800F6DFB3 /* ServicesLayer */,
 				EBB7E01D2628CB0500F6DFB3 /* PresentationViews */,
 				EB5360A9260EF1D300D2DB4A /* Images */,
 				EBD5FE84260D3F44008E85C7 /* AppDelegate.swift */,
