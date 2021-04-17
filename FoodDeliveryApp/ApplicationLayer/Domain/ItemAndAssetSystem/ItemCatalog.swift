@@ -19,6 +19,10 @@ class ItemCatalog {
         return itemRepo.getAllItems()
     }
     
+    func retrieveStock() -> [DrinksStock] {
+        return itemRepo.getProductStock()
+    }
+    
     
     
 }
